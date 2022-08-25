@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500&family=Bitter:wght@200;300&display=swap');
+
+
+body {
+    background-color: rgb(236, 223, 223);
+}
+
+.logo{
+    display: relative;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+    height: 400px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    box-sizing: border-box;
+}
+
+.about{
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.about img{
+    margin-right: 20px;
+    height: auto;
+    width: 400px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+.about-text h1{
+    color: Black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;     
+}
+
+.about-text h5{
+    color: #34495e;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+button{
+background:rgb(88, 15, 148);
+color: white;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 20px 50px;
+border-radius: 30px;
+transition: .4s;
+margin-top: 20px;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+nav {
+  margin: 27px auto 0;
+  display : flex;
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+
+footer {
+    position:relative;
+    left:0px;
+    bottom:0px;
+    top: 300px;
+    height:30px;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer a {
+    display: inline;
+    margin: 20px;
+}
+
+a {  
+    text-decoration: none;
+    color: rgb(11, 2, 15);   
+}

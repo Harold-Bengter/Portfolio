@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,400;1,100;1,300&family=Cabin+Condensed&family=Oswald:wght@300&family=Parisienne&family=Taviraj:ital,wght@0,100;0,500;1,100;1,200;1,700&display=swap');
+
+body {
+    background-color: rgb(236, 223, 223);
+}
+
+nav {
+  margin: 27px auto 0;
+  display : flex;
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+
+#slider{
+    height:200px;
+    border: 1px solid rgb(189, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer{
+    padding: 150px 150px 90px 90px;
+    width: auto;
+    margin: auto;
+}
+
+.slide-img{
+    width: auto;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 500px rgba(0 ,0 ,0, 0.9) inset;
+}
+
+.slide img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: rgb(243, 243, 243);
+}
+
+.slide img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1{
+ background-image: url(/src/images/Backend1.png);
+ href : "https://github.com/stars/Harold-Bengter/lists/c-backend-work"
+} 
+.img-2{
+ background-image: url(/src/images/MyNotepad.png);
+ href: "https://github.com/Harold-Bengter/NotePad"
+}
+.img-3{
+ background-image: url(/src/images/Frontend1.png);
+ href : "https://github.com/stars/Harold-Bengter/lists/my-frontend-work"
+} 
+.img-4{
+ background-image: url(/src/images/FP!.png);
+
+}
+.img-5{
+ background-image: url(/src/images/TacoPort.PNG);
+ href: "https://github.com/Harold-Bengter/TacoParser"
+}
+
+.Sub{
+
+font-family: 'Taviraj', serif;
+font-size: 20px;
+color:rgba(56, 50, 50, 0.9)
+}
+
+li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+h1 {   
+    font-size: 160px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Cabin Condensed', sans-serif;
+    margin: 3px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(5, 4, 4);
+    font-family: 'Taviraj', serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.subtitle {
+    font-size: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    margin-top: 17vh;
+    text-align:center;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+
+footer {
+    position:relative;
+    left:0px;
+    bottom:0px;
+    top: 300px;
+    height:30px;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer a {
+    display: inline;
+    margin: 20px;
+}
+
+.options {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+
+.options a {
+    margin: 40px 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {  
+    text-decoration: none;
+    color: rgb(11, 2, 15);   
+}
+
+.socials {
+    width: 100px;
+    height: 320px;
+    background-color: rgb(61, 53, 173);
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 27vh;
+}
+
+@media only screen and (max-width: 600px) {
+.socials {
+    display: none;
+}
+}
+.container{
+    width: 100%;
+}
+
+.social {
+    width: 100%;
+    height: 33%;
+}
+
+.wave {
+    fill: rgb(122, 136, 139);
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.wave2 {
+    fill: rgb(122, 136, 139);
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+   
+}
+
+.social svg {
+    fill: rgb(255,255,255);
+}
+
+a:hover {
+    color: rgb(6, 4, 14);
+}
+
+
+.title{
+    font-family: 'Taviraj', serif;
+    max-width: 20ch;
+    text-align: center;
+    transform: scale(0.85);
+    animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
