@@ -58,6 +58,13 @@ body {
     letter-spacing: 2px;
 }
 
+.Certificate{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 button{
 background:rgb(88, 15, 148);
 color: white;

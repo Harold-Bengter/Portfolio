@@ -104,6 +104,15 @@ h2 {
 	
 	padding: 0 0 .25em;
 }
+p{
+	fontfamily: "Expletus Sans", sans-serif;
+	font-size:larger
+}
+
+.first{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;
+}
 
 /* Styling an indeterminate progress bar */
 
@@ -330,7 +339,18 @@ p[data-value]:after {
      -moz-linear-gradient( left, #09c, #690);
 }
 
-/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+footer {
+    position:relative;
+    left:0px;
+    bottom:0px;
+    top: 300px;
+    height:30px;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
 
-  
-/* THE END */
+footer a {
+    display: inline;
+    margin: 20px;
+}
